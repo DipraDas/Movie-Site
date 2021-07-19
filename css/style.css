@@ -347,7 +347,7 @@ header::after{
 ------------------------------------------*/
 
 .live-sports{
-    background-image: url(/images/live-sports.jpg);
+    background-image: url(../images/live-sports.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -463,7 +463,7 @@ header::after{
         padding-right: 10px;
     }
     .live-sports{
-        background-image: url(/images/live-sports-small.jpg);
+        background-image: url(../images/live-sports-small.jpg);
         height: 500px;
     }
     .live-sports {
