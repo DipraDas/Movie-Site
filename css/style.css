@@ -342,6 +342,90 @@ header::after{
 }
 
 
+/* ---------------------------------------
+             live sports                        
+------------------------------------------*/
+
+.live-sports{
+    background-image: url(/images/live-sports.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 100px;
+    color: #fff;
+}
+.live-sports h1{
+    font-size: 70px;
+}
+
+.live-sports p{
+    font-size: 24px;
+    max-width: 750px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ls-list{
+    display: flex;
+}
+.ls-list img{
+    width: 100px;
+}
+
+/* ---------------------------------------
+                  footer                        
+------------------------------------------*/
+
+.footer{
+    background-color: #ebedf2;;
+    padding: 70px 0px;
+}
+
+.ft-container{
+    width: 1100px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ft-upper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ft-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-section a{
+    color:rgb(94, 94, 94);
+    text-decoration: none;
+    line-height: 30px;
+}
+
+#special{
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.ft-bottom{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.ft-bottom a{
+    font-size: 22px;
+    color: rgb(88, 88, 88);
+}
+
+.ft-bottom a:hover{
+    color: var(--light-color    );
+}
 
 /* ---------------------------------------
              media-query                        
@@ -378,6 +462,35 @@ header::after{
         padding-left: 10px;
         padding-right: 10px;
     }
+    .live-sports{
+        background-image: url(/images/live-sports-small.jpg);
+        height: 500px;
+    }
+    .live-sports {
+        padding: 200px 40px;
+    }
+    #bar{
+        width: 100%;
+    }
+    .ft-container{
+        width: 80%;
+        text-align: center;
+    }
+    .ft-upper{
+        flex-direction: column;
+    }
+    .ft-section{
+        margin-top: 35px;
+    }
+    #special {
+        font-size: 26px;
+    }
+    .ft-section a {
+        font-size: 18px;
+    }
+    .ft-bottom{
+        justify-content: center;
+    }
 }
 
 
@@ -410,6 +523,13 @@ header::after{
     }
     .k-right p{
         text-align: center;
+    }
+    .ft-container{
+        width:80%;
+    }
+
+    #bar{
+        width: 100%;
     }
 }
 
