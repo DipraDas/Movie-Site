@@ -186,6 +186,7 @@ header::after{
 
 .program{
     background-color: var(--primaryBackground);
+    border-bottom: 8px solid rgb(80, 76, 76);
 }
 
 .program p{
@@ -252,6 +253,96 @@ header::after{
     width: 100%;
 }
 
+
+/* ---------------------------------------
+                  kids                        
+------------------------------------------*/
+
+.kids-c{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.kids{
+    background-color: black;
+    padding: 50px 30px;
+    border-bottom: 8px solid rgb(80, 76, 76);
+}
+
+.kids-section{
+    display: flex;
+    align-items: center;
+}
+
+.k-right h1{
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.k-right p{
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: left;
+    color: #ccc;
+}
+
+
+
+/* ---------------------------------------
+                  live                      
+------------------------------------------*/
+.live{
+    background-color: var(--secondaryBackground);
+    color: #fff;
+    padding: 25px 0px;
+}
+
+.live-container{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid var(--light-color);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.live-container p{
+    font-size: 13px;
+    color: var(--light-color);
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+.live-container h1{
+    font-size: 70px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.live-container h3{
+    margin: 0 auto;
+    max-width: 900px;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.live-container h5{
+    font-size: 11px;
+    font-weight: 300;
+    color: #ccc;
+    padding-bottom: 50px;
+}
+.live-container a{
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+
+
 /* ---------------------------------------
              media-query                        
 ------------------------------------------*/
@@ -270,11 +361,30 @@ header::after{
     .types{
         grid-template-columns: 1fr;
     }
-
-
+    .kids-c{
+        width: 90%;
+    }
+    .kids-section{
+        flex-direction: column;
+    }
+    .k-left img{
+        width: 95%;
+    }
+    .k-right h1{
+        padding: 20px 0px;
+    }
+    .live-container{
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
+
 @media only screen and (min-width: 688px) and (max-width: 1100px){
+    .container{
+        width: 95%;
+    }
     .sub-header{
         grid-template-columns: 2fr 2fr 2fr;
     }
@@ -285,5 +395,31 @@ header::after{
     .types{
         grid-template-columns: 2fr 2fr;
     }
+    .kids-c{
+        width: 90%;
+    }
+    .kids-section{
+        flex-direction: column;
+        text-align: center;
+    }
+    .k-left img{
+        width: 95%;
+    }
+    .k-right{
+        margin-top: 70px;
+    }
+    .k-right p{
+        text-align: center;
+    }
+}
 
+
+@media only screen and (min-width: 1101px) and (max-width: 1200px){
+    .program-lower{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .kids-c{
+        width: 100%;
+    }
 }
